@@ -1,13 +1,16 @@
 .box {
   width: 400px;
   height: 550px;
-  background-color: lightblue;
+  background-color: darkred;
   border-radius: 20px;
-  transition: transform 0.5s;
+  transition: transform 0.3s;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
 }
 body {
     display: flex;
@@ -19,3 +22,13 @@ body {
 .flip {
     transform: rotateY(180deg);
 }
+
+.navbutton {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: black;
+	border: none;
+	font-size: 24px;
+	cursor: pointer;
+	}

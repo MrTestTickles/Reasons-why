@@ -13,11 +13,11 @@ backbtn.addEventListener("click", function() {
 		if (currentIndex > 0) {
 		currentIndex = currentIndex - 1;
 		boxElement.textContent = words[currentIndex]}
-},250);
+},150);
 	
 	setTimeout(function() {
 			 boxElement.classList.remove("flip");		
-			}, 500);
+			}, 300);
 });
 
 forwardbtn.addEventListener("click", function() {
@@ -28,11 +28,11 @@ forwardbtn.addEventListener("click", function() {
 		if (currentIndex < words.length - 1) {
 		currentIndex = currentIndex + 1;
 		boxElement.textContent = words[currentIndex]}	
-}, 250);
+}, 150);
 	
 	setTimeout(function() {
 		 boxElement.classList.remove("flip");		
-		}, 500);
+		}, 300);
 });
 
 boxElement.textContent = words[currentIndex];
