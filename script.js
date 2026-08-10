@@ -7,7 +7,7 @@ const forwardbtn = document.getElementById("forwardbtn");
 const boxElement = document.querySelector(".box");
 
 backbtn.addEventListener("click", function() { 
-	boxElement.classList.add("flip")
+	boxElement.classList.add("flip-back")
 	
 	setTimeout(function() {
 		if (currentIndex > 0) {
@@ -16,12 +16,13 @@ backbtn.addEventListener("click", function() {
 },150);
 	
 	setTimeout(function() {
-			 boxElement.classList.remove("flip");		
+			 boxElement.classList.remove("flip-back");		
+			 boxElement.style.transform = 'none';
 			}, 300);
 });
 
 forwardbtn.addEventListener("click", function() {
-	boxElement.classList.add("flip")
+	boxElement.classList.add("flip-forward")
 	
 	setTimeout(function() {
 		
@@ -31,8 +32,9 @@ forwardbtn.addEventListener("click", function() {
 }, 150);
 	
 	setTimeout(function() {
-		 boxElement.classList.remove("flip");		
-		}, 300);
+		 boxElement.classList.remove("flip-forward");		
+		boxElement.style.transform = 'none';
+	 }, 300);
 });
 
 boxElement.textContent = words[currentIndex];

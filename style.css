@@ -20,10 +20,14 @@ body {
     height: 100vh;
 	perspective: 800px;
 }
-.flip {
-    transform: rotateY(180deg);
+
+.flip-forward {
+	transform: rotateY(360deg);
 }
 
+.flip-back {
+	transform: rotateY(-360deg);
+}
 .navbutton {
 	width: 60px;
 	height: 60px;
