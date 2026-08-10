@@ -18,6 +18,7 @@ backbtn.addEventListener("click", function() {
 	setTimeout(function() {
 			 boxElement.classList.remove("flip-back");		
 			 boxElement.style.transform = 'none';
+			 void boxElement.offsetWidth;
 			}, 300);
 });
 
@@ -34,6 +35,7 @@ forwardbtn.addEventListener("click", function() {
 	setTimeout(function() {
 		 boxElement.classList.remove("flip-forward");		
 		boxElement.style.transform = 'none';
+		void boxElement.offsetWidth;
 	 }, 300);
 });
 
