@@ -4,7 +4,6 @@
   background-color: darkred;
   border-radius: 20px;
   transition: transform 0.3s;
-  backface-visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
