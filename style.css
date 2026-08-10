@@ -31,13 +31,13 @@ body {
 	color: white;
 	}
 
-.navbutton nav-left  {
+.nav-left  {
 	position: fixed; 
 	bottom: 30px;
 	left: 30px;
 }
 
-.navbutton nav-right {
+.nav-right {
 	position: fixed; 
 	bottom: 30px;
 	right: 30px;
