@@ -6,12 +6,12 @@ const backbtn = document.getElementById("backbtn");
 const forwardbtn = document.getElementById("forwardbtn");
 
 const introScreen = document.getElementById("introScreen");
-const introScreen = document.getElementById("readyScreen");
-const introScreen = document.getElementById("cardScreen");
+const readyScreen = document.getElementById("readyScreen");
+const cardScreen = document.getElementById("cardScreen");
 
-const introScreen = document.getElementById("introForward");
-const introScreen = document.getElementById("readtBack");
-const introScreen = document.getElementById("readyForward");
+const introForward = document.getElementById("introForward");
+const readyBack = document.getElementById("readyBack");
+const readyForward = document.getElementById("readyForward");
 
 const boxElement = document.querySelector(".box");
 
@@ -41,13 +41,13 @@ introForward.addEventListener("click", function() {
 });
 
 readyBack.addEventListener("click", function() {
-	introScreen.style.display = "none";
-	readyScreen.style.display = "flex";
+	readyScreen.style.display = "none";
+	introScreen.style.display = "flex";
 });
 
 readyForward.addEventListener("click", function() {
-	introScreen.style.display = "none";
-	readyScreen.style.display = "flex";
+	readyScreen.style.display = "none";
+	cardScreen.style.display = "flex";
 });
 
 boxElement.textContent = words[currentIndex];
