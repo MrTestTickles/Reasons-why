@@ -1,6 +1,6 @@
 .box {
-  width: 400px;
-  height: 550px;
+  width: 80vw;
+  height: 70vh;
   background-color: darkred;
   border-radius: 20px;
   transition: transform 0.3s;
@@ -19,7 +19,7 @@ body {
     align-items: center;
     height: 100vh;
 	perspective: 800px;
-	background-color: blanchedalmond;
+	background-color: #FFFDD0;
 	border: 6px solid black;
 	margin: 0;
 }
@@ -27,8 +27,8 @@ body {
 #cardTitle {
 	position: fixed;
 	top: 40px;
-	left: 20;
-	right: 0;
+	left: 0;
+	right: 20;
 	font-size: 80px;
 	margin: 0;
 }
