@@ -99,7 +99,7 @@ function createPetal() {
  }, 8000);
 }
 
-setInterval(createPetal,250);
+setInterval(createPetal,150);
 
 function updateCounter() {
 	counterElement.textContent = (currentIndex + 1) + "/" + words.length;
