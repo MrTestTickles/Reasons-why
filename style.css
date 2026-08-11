@@ -75,7 +75,8 @@ pointer-events: none;
 }
 
 p {
-	-webkit-text-stroke: 0.5px white;
+	overflow-y: auto;
+	text-align: center;
 	align-items: center;
 	 font-size: 48px;
 	 font-weight: bold;
