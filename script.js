@@ -16,12 +16,12 @@ const readyForward = document.getElementById("readyForward");
 const boxElement = document.querySelector(".box");
 
 backbtn.addEventListener("click", function() { 
-	rotation = rotation - 360;
-	boxElement.style.transform = `rotateY(${rotation}deg)`;
-	setTimeout(function() {
-		if (currentIndex > 0) {
-		currentIndex = currentIndex - 1;
-		boxElement.textContent = words[currentIndex]}
+	if (currentIndex > 0) {
+		rotation = rotation - 360;
+		boxElement.style.transform = `rotateY(${rotation}deg)`;
+		setTimeout(function() {
+			currentIndex = currentIndex - 1;
+			boxElement.textContent = words[currentIndex];
 },150);
 	} else {
 		cardScreen.style.display = "none";
