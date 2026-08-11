@@ -6,7 +6,7 @@ const words = ["How caring you are", "Your eyes", "Your personality", "How lovin
 	"How you always listen to how i feel", "How much you miss say you miss me", "How you never let me pay", "How you look at me when you admire me", "When you move your hair out of your face when youre worried",
 	"Your music suggestions", "How excited you get", "How cute you are when youre just sitting there", "How you you look when youre focused", "How adorable you are when you talk about smt you love", "How you always remind me to take care of myself",
 	"How you always care about my hobbies", "How you always support me through anything","The updates you give me","The lengths youll go to see me happy", "How you never want to see me sad", "How nothing matters to you when im sad or upset","Your passions"
-	"How you always come back","Your 'bare minimum'", "How joyous and positive you are", "Your ups", "Your downs", "Your love letters", "Your little habits that make you! My sweet gitl","Your love for mexico", "How you always try to talk or see me no matter how busy you are",
+	"How you always come back","Your version of bare minimum", "How joyous and positive you are", "Your ups", "Your downs", "Your love letters", "Your little habits that make you! My sweet gitl","Your love for mexico", "How you always try to talk or see me no matter how busy you are",
 	"Your beautiful smooth skin", "How well you take care of yourself","Your eyes","Your best moments", "Your worst moments"
 ];
 
