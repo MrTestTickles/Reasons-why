@@ -7,8 +7,9 @@ const words = ["How caring you are", "Your eyes", "Your personality", "How lovin
 	"Your music suggestions", "How excited you get", "How cute you are when youre just sitting there", "How you you look when youre focused", "How adorable you are when you talk about smt you love", "How you always remind me to take care of myself",
 	"How you always care about my hobbies", "How you always support me through anything","The updates you give me","The lengths youll go to see me happy", "How you never want to see me sad", "How nothing matters to you when im sad or upset","Your passions",
 	"How you always come back","Your version of 'bare minimum'", "How joyous and positive you are", "Your ups", "Your downs", "Your love letters", "Your little habits that make you! My sweet gitl","Your love for mexico", "How you always try to talk or see me no matter how busy you are",
-	"Your perfect face", "How well you take care of yourself","Your eyes","Your best moments", "Your worst moments","What a goober you are","Your drawings","How hard you work",
-	"How much you make me feel like i matter","How loved you make me feel","How much you complete me"
+	"Your perfect face", "How well you take care of yourself","Your eyes","Your best moments", "Your worst moments","What a goober you are","Your drawings","How hard you work", "How perfectly you make everything feel", "how you turn any bad day around instantly by just being yourself","How much you love Dr.pepper",
+	"How much you make me feel like i matter","How loved you make me feel","How much you complete me", "How much you love tacos", "How you always ask my opinion on things", 
+	"How adorable your gifts are","How you never take credit for the amazing things you do"
 ];
 
 let currentIndex= 0;
