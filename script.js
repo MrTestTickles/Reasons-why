@@ -72,6 +72,6 @@ function createPetal() {
  }, 8000);
 }
 
-setInterval(createPetal,800);
+setInterval(createPetal,500);
 
 boxElement.textContent = words[currentIndex];
