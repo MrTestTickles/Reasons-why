@@ -11,7 +11,7 @@
   font-weight: bold;
   color: white;
   font-family: "Trebuchet MS", sans-serif;
-  border: 4px dotted black 
+  border: 5px solid black 
 }
 body {
     display: flex;
@@ -19,16 +19,18 @@ body {
     align-items: center;
     height: 100vh;
 	perspective: 800px;
-	background-color: blanchedalmond
+	background-color: blanchedalmond;
 	border: 6px solid black;
 	margin: 0;
 }
 
 #cardTitle {
+	position: fixed;
+	top: 40px;
+	left: 20;
+	right: 0;
 	font-size: 80px;
-	text-align: top:
 	margin: 0;
-	padding: 40px 0;
 }
 
 .navbutton {

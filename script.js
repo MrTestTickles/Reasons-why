@@ -23,6 +23,10 @@ backbtn.addEventListener("click", function() {
 		currentIndex = currentIndex - 1;
 		boxElement.textContent = words[currentIndex]}
 },150);
+	} else {
+		cardScreen.style.display = "none";
+		readyScreen.style.display = "flex";
+	}
 });
 
 forwardbtn.addEventListener("click", function() {
