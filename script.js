@@ -22,7 +22,7 @@ const forwardbtn = document.getElementById("forwardbtn");
 const introScreen = document.getElementById("introScreen");
 const readyScreen = document.getElementById("readyScreen");
 const cardScreen = document.getElementById("cardScreen");
-const outroScreen = document.getElementById("outroScreen")
+const outroScreen = document.getElementById("outroScreen");
 const introForward = document.getElementById("introForward");
 const readyBack = document.getElementById("readyBack");
 const readyForward = document.getElementById("readyForward");
@@ -39,7 +39,7 @@ backbtn.addEventListener("click", function() {
 			currentIndex = currentIndex - 1;
 			boxElement.textContent = words[currentIndex];
 			updateCounter();
-},150);
+		},150);
 	} else {
 		cardScreen.style.display = "none";
 		readyScreen.style.display = "flex";
@@ -47,22 +47,19 @@ backbtn.addEventListener("click", function() {
 });
 
 forwardbtn.addEventListener("click", function() {
+	if (currentIndex < words.length - 1) {
 	rotation = rotation + 360;
 	boxElement.style.transform = `rotateY(${rotation}deg)`;
 	setTimeout(function() {
-		if (currentIndex < words.length - 1) {
 		currentIndex = currentIndex + 1;
 		boxElement.textContent = words[currentIndex];
 		updateCounter();
-		}
-	}, 150);
+	   }, 150);
 	} else { 
-		cardScreen.style.display = "none"
-		OutroScreen.style.display = "flex"
+		cardScreen.style.display = "none";
+		outroScreen.style.display = "flex";
 	}
 });
-
-
 
 introForward.addEventListener("click", function() {
 	introScreen.style.display = "none";
@@ -81,8 +78,8 @@ readyForward.addEventListener("click", function() {
 
 outroBack.addEventListener("click", function() {
 	outroScreen.style.display = "none";
-	cardScreen.style.displat = "flex"
-}
+	cardScreen.style.display = "flex";
+});
 
 const petalContainer = document.getElementById("petalContainer");
 
