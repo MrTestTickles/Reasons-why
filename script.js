@@ -1,4 +1,11 @@
-const words = ["First", "Second", "Third"];
+const words = ["How caring you are", "Your eyes", "Your personality", "How loving you are", "The way you love", "Your laugh","The way you walk", "How you organize things",
+	"How you always help others", "Your reels", "The way you yearn", "Your music","The way you talk", "How passionate you are","How deeply you care for me","How you care for me",
+	"Your selfies", "Your chickens","Your amazing ideas","your big dreams", "How much you care for kids", "How you always chase your dreams no matter who says what","your perfect hair",
+	"How much love you have to give all the time", "How your'e always thinking of me", "How you never judge anyone before listening first","Your legs","your ears", "How chalant you are",
+	"How goofy you are", "How much you always plan", "When you give me chisme and include me in the drama", "How you always change yourself for the better", "How you always put your best foot forward"'
+	"How you always listen to how i feel"
+];
+
 let currentIndex= 0;
 let rotation = 0;
 
@@ -14,6 +21,7 @@ const readyBack = document.getElementById("readyBack");
 const readyForward = document.getElementById("readyForward");
 
 const boxElement = document.querySelector(".box");
+const counterElement = document.getElementById("counter");
 
 backbtn.addEventListener("click", function() { 
 	if (currentIndex > 0) {
@@ -22,6 +30,7 @@ backbtn.addEventListener("click", function() {
 		setTimeout(function() {
 			currentIndex = currentIndex - 1;
 			boxElement.textContent = words[currentIndex];
+			updateCounter();
 },150);
 	} else {
 		cardScreen.style.display = "none";
@@ -31,12 +40,14 @@ backbtn.addEventListener("click", function() {
 
 forwardbtn.addEventListener("click", function() {
 	rotation = rotation + 360;
-		boxElement.style.transform = `rotateY(${rotation}deg)`;
+	boxElement.style.transform = `rotateY(${rotation}deg)`;
 	setTimeout(function() {
 		if (currentIndex < words.length - 1) {
 		currentIndex = currentIndex + 1;
-		boxElement.textContent = words[currentIndex]}	
-}, 150);
+		boxElement.textContent = words[currentIndex];
+		updateCounter();
+		}
+	}, 150);
 });
 
 introForward.addEventListener("click", function() {
@@ -72,6 +83,11 @@ function createPetal() {
  }, 8000);
 }
 
-setInterval(createPetal,500);
+setInterval(createPetal,250);
+
+function updateCounter() {
+	counterElement.textContent = (currentIndex + 1) + "/" + words.length;
+}
 
 boxElement.textContent = words[currentIndex];
+updateCounter();
