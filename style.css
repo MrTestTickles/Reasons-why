@@ -13,6 +13,7 @@
   font-family: "Trebuchet MS", sans-serif;
   border: 5px solid black;
   overflow-y: auto;
+  text-align: center;
 }
 body {
     display: flex;
@@ -96,6 +97,7 @@ p {
 	font-family: "Trebuchet MS", sans-serif;
 	border: 5px solid black;
 	overflow-y: auto;
+	text-align: center;
 }
 
 .navbutton {
