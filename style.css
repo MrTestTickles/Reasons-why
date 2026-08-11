@@ -74,7 +74,10 @@ pointer-events: none;
 }
 
 p {
-	-webkit-text-stroke: 1px white;
+	-webkit-text-stroke: 0.5px white;
+	align-items: center;
+	 font-size: 48px;
+	 font-weight: bold;
 }
 
 .navbutton {
