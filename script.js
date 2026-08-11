@@ -22,13 +22,14 @@ const forwardbtn = document.getElementById("forwardbtn");
 const introScreen = document.getElementById("introScreen");
 const readyScreen = document.getElementById("readyScreen");
 const cardScreen = document.getElementById("cardScreen");
-
+const outroScreen = document.getElementById("outroScreen")
 const introForward = document.getElementById("introForward");
 const readyBack = document.getElementById("readyBack");
 const readyForward = document.getElementById("readyForward");
-
+const outroBack = document.getElementById("outroBack");
 const boxElement = document.querySelector(".box");
 const counterElement = document.getElementById("counter");
+
 
 backbtn.addEventListener("click", function() { 
 	if (currentIndex > 0) {
@@ -55,7 +56,13 @@ forwardbtn.addEventListener("click", function() {
 		updateCounter();
 		}
 	}, 150);
+	} else { 
+		cardScreen.style.display = "none"
+		OutroScreen.style.display = "flex"
+	}
 });
+
+
 
 introForward.addEventListener("click", function() {
 	introScreen.style.display = "none";
@@ -71,6 +78,11 @@ readyForward.addEventListener("click", function() {
 	readyScreen.style.display = "none";
 	cardScreen.style.display = "flex";
 });
+
+outroBack.addEventListener("click", function() {
+	outroScreen.style.display = "none";
+	cardScreen.style.displat = "flex"
+}
 
 const petalContainer = document.getElementById("petalContainer");
 

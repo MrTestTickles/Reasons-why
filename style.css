@@ -78,6 +78,19 @@ p {
 	align-items: center;
 	 font-size: 48px;
 	 font-weight: bold;
+	 
+}
+
+.text-card {
+	width: fit-content;
+	max-width: 80vw;
+	padding: 60px 40px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	min-height: 50vh;
 }
 
 .navbutton {
