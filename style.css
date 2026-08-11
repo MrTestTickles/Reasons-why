@@ -33,6 +33,23 @@ body {
 	margin: 0;
 }
 
+#petal container {
+position fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.petal {
+	position: absolute;
+	width 15px;
+	height: 15px;
+	background-color: #e8a0a8;
+	top: -20px;
+}
+
 .navbutton {
 	width: 60px;
 	height: 60px;
