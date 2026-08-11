@@ -12,6 +12,7 @@
   color: white;
   font-family: "Trebuchet MS", sans-serif;
   border: 5px solid black;
+  overflow-y: auto;
 }
 body {
     display: flex;
@@ -81,19 +82,20 @@ p {
 }
 
 .text-card {
-  width: fit-content;
-  max-width: 80vw;
-  padding: 60px 40px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 50vh;
-  background-color: darkred;
-  color: white;
-  border-radius: 20px;
-  border: 5px solid black;
+	width: 80vw;
+	height: 70vh;
+	background-color: darkred;
+	border-radius: 20px;
+	transition: transform 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+	font-family: "Trebuchet MS", sans-serif;
+	border: 5px solid black;
+	overflow-y: auto;
 }
 
 .navbutton {
